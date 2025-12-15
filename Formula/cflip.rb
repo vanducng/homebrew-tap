@@ -3,7 +3,7 @@ cask "cflip" do
   name "cflip"
   desc "A CLI tool to switch between Claude models and providers"
   homepage "https://github.com/vanducng/cflip"
-  version "1.10.0"
+  version "1.11.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "cflip" do
   on_macos do
     on_intel do
       url "https://github.com/vanducng/cflip/releases/download/v#{version}/cflip_Darwin_x86_64.tar.gz"
-      sha256 "9363de56624ff2025bf380de794b76935bc483a579ab2b8e7462e899976627cf"
+      sha256 "29af82d0f8e90684ec310626ec6d30d470ec8088190178fe7192f88598226624"
     end
     on_arm do
       url "https://github.com/vanducng/cflip/releases/download/v#{version}/cflip_Darwin_arm64.tar.gz"
-      sha256 "2d5d8bd9c0c5457e1544c95f2e92883667e59c54c403b15866cad72464182ec0"
+      sha256 "23f8c62e81a638d1caaf693044c2b5c1281007bef92e1173869ece488baf18bb"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/vanducng/cflip/releases/download/v#{version}/cflip_Linux_x86_64.tar.gz"
-      sha256 "73d49b714a2e54b0d9e6d2af78fe20cfd9d11fc57455ddc146609cfc0958cea6"
+      sha256 "7d31606b9f3c192a8209d6b3eebf4ab38f5c2c5ba0980aae11225ab79c2fb9e0"
     end
     on_arm do
       url "https://github.com/vanducng/cflip/releases/download/v#{version}/cflip_Linux_arm64.tar.gz"
-      sha256 "234a8818db4c5f7d20fcc6cdbfac1831d96910f11e23c58ac75e4e016eb2103b"
+      sha256 "71521b7235fbe42ab1dd0bce578e06c5147f7e2bde1947fbeedaaae0be427504"
     end
   end
 

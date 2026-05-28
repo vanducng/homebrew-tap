@@ -1,13 +1,13 @@
 class Miudb < Formula
-  MIUDB_VERSION = "v0.2.0-go.5".freeze
+  MIUDB_VERSION = "v0.2.0-go.6".freeze
 
-  desc "Headless database CLI for agents and Neovim"
+  desc "Headless database CLI for humans and agents"
   homepage "https://github.com/vanducng/miu-db"
-  url "https://github.com/vanducng/miu-db/archive/refs/tags/v0.2.0-go.5.tar.gz"
-  version "0.2.0-go.5"
-  sha256 "ad8e8b6ad3d428519727ea049117c27b2c074ac6d242cea74f7fd97fc73ce8c8"
+  url "https://github.com/vanducng/miu-db/archive/refs/tags/v0.2.0-go.6.tar.gz"
+  version "0.2.0-go.6"
+  sha256 "9c0061e9d7bb58aa88564251f4830e895ccd753241d66f2a83c484b849a750e2"
   license "MIT"
-  head "https://github.com/vanducng/miu-db.git", branch: "golang"
+  head "https://github.com/vanducng/miu-db.git", branch: "dev"
 
   depends_on "go" => :build
 

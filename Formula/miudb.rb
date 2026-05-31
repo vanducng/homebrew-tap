@@ -5,21 +5,21 @@
 class Miudb < Formula
   desc "Headless database CLI for humans and agents"
   homepage "https://github.com/vanducng/miu-db"
-  version "0.2.0-go.8"
+  version "0.2.0-go.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vanducng/miu-db/releases/download/v0.2.0-go.8/miudb_darwin_x86_64.tar.gz"
-      sha256 "963f138ef58b964a9ab8e95923f4e2c3907daeb6a12bfae367df2aa08364c2f8"
+      url "https://github.com/vanducng/miu-db/releases/download/v0.2.0-go.9/miudb_darwin_x86_64.tar.gz"
+      sha256 "50020d34ef4ef7e414f9c4015cb5a668e86eba9bfa6e6fa1dc1af81aef401560"
 
       define_method(:install) do
         bin.install "miudb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vanducng/miu-db/releases/download/v0.2.0-go.8/miudb_darwin_arm64.tar.gz"
-      sha256 "6ca28203dbf3a3f009778678b910db2f7dd7fe6647cad99d6539c78d0c1e2e45"
+      url "https://github.com/vanducng/miu-db/releases/download/v0.2.0-go.9/miudb_darwin_arm64.tar.gz"
+      sha256 "36435d0f7d6b62320cc2556ec6d1712d2b0195e163aa5380f71d2c5a097b8370"
 
       define_method(:install) do
         bin.install "miudb"
@@ -29,15 +29,15 @@ class Miudb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vanducng/miu-db/releases/download/v0.2.0-go.8/miudb_linux_x86_64.tar.gz"
-      sha256 "4f32dcfadc6ce17e42d4092d7dfe28a40d0524a3587392269601aaddff11b0f2"
+      url "https://github.com/vanducng/miu-db/releases/download/v0.2.0-go.9/miudb_linux_x86_64.tar.gz"
+      sha256 "79ea067647be2d20ea533e0513736585f8af43f04682c744f177d536ad2d8768"
       define_method(:install) do
         bin.install "miudb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vanducng/miu-db/releases/download/v0.2.0-go.8/miudb_linux_arm64.tar.gz"
-      sha256 "03673c1b6eb94b90b7d7a6023346e76968371c608187f11bda8127971f18c1ae"
+      url "https://github.com/vanducng/miu-db/releases/download/v0.2.0-go.9/miudb_linux_arm64.tar.gz"
+      sha256 "625d720d9553167b45be2de1156645cd538040ed17eb98aa545ddb443f7db576"
       define_method(:install) do
         bin.install "miudb"
       end

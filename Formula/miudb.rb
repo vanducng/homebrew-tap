@@ -5,21 +5,21 @@
 class Miudb < Formula
   desc "Headless database CLI for humans and agents"
   homepage "https://github.com/vanducng/miu-db"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vanducng/miu-db/releases/download/v0.2.4/miudb_darwin_x86_64.tar.gz"
-      sha256 "34b73b6f4ff023f4ffac8ba0da240f7b4550dc8f380bb265097e9d446da7135b"
+      url "https://github.com/vanducng/miu-db/releases/download/v0.2.5/miudb_darwin_x86_64.tar.gz"
+      sha256 "299e7b9461d44477e2fb5b31e8116fa65353e0d7ff05180fbae2746b24e6e618"
 
       define_method(:install) do
         bin.install "miudb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vanducng/miu-db/releases/download/v0.2.4/miudb_darwin_arm64.tar.gz"
-      sha256 "006a1695d3fa38826eab01510f3ebdb18f948a6b077c62058697c65664ee7551"
+      url "https://github.com/vanducng/miu-db/releases/download/v0.2.5/miudb_darwin_arm64.tar.gz"
+      sha256 "32f977f2a328a8f83a2a98ea935631cbe285d9ed35cb019c715a38639e08b552"
 
       define_method(:install) do
         bin.install "miudb"
@@ -29,15 +29,15 @@ class Miudb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vanducng/miu-db/releases/download/v0.2.4/miudb_linux_x86_64.tar.gz"
-      sha256 "65c61dea4ad5baa9e0c95f9ca305ea41c0f2b2b578712c488a2fd12ce1281020"
+      url "https://github.com/vanducng/miu-db/releases/download/v0.2.5/miudb_linux_x86_64.tar.gz"
+      sha256 "5e0a1f4426365fa5c45e83c91a6ae05d6b14bcca04dc128555034ec33df52b61"
       define_method(:install) do
         bin.install "miudb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vanducng/miu-db/releases/download/v0.2.4/miudb_linux_arm64.tar.gz"
-      sha256 "04142d56244fba51b25e18a89d38e9b5193f7918f4e074edc90fc56cd927bc9b"
+      url "https://github.com/vanducng/miu-db/releases/download/v0.2.5/miudb_linux_arm64.tar.gz"
+      sha256 "bebdca4cac5b1326b342b5470499f1a7d5dd2a5d6dfaefb39891376a5458419e"
       define_method(:install) do
         bin.install "miudb"
       end

@@ -5,21 +5,21 @@
 class Vd < Formula
   desc "Vendoring package manager for coding-agent skills (Claude Code, Codex)"
   homepage "https://github.com/vanducng/vd-cli"
-  version "3.4.1"
+  version "3.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vanducng/vd-cli/releases/download/v3.4.1/vd_darwin_x86_64.tar.gz"
-      sha256 "ce1df2df3526b9eac34c69dacc91ecd341db53faed55bf95997d7be60a5f0c3c"
+      url "https://github.com/vanducng/vd-cli/releases/download/v3.5.0/vd_darwin_x86_64.tar.gz"
+      sha256 "0ca4130eac382dd06ab535330a38bcf3c5a992e0c484eb3c8785612584b6f010"
 
       define_method(:install) do
         bin.install "vd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vanducng/vd-cli/releases/download/v3.4.1/vd_darwin_arm64.tar.gz"
-      sha256 "5d841d31802ec0bdc281cc8e345235b18449b93a27d503980330cc5c3d7ce967"
+      url "https://github.com/vanducng/vd-cli/releases/download/v3.5.0/vd_darwin_arm64.tar.gz"
+      sha256 "8b47eceaca12d2b90c301046356945aaeb0cfa65b3ec969c93d5a5842ee2049c"
 
       define_method(:install) do
         bin.install "vd"
@@ -29,15 +29,15 @@ class Vd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vanducng/vd-cli/releases/download/v3.4.1/vd_linux_x86_64.tar.gz"
-      sha256 "bee12d5000a9c25983bc0db4d0e362700649e1a7ec80501267efe358cdce82f2"
+      url "https://github.com/vanducng/vd-cli/releases/download/v3.5.0/vd_linux_x86_64.tar.gz"
+      sha256 "f95e7d6f94fa440a2c93225a568cfaa196121027bc64a8318eccee96cffa8d09"
       define_method(:install) do
         bin.install "vd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vanducng/vd-cli/releases/download/v3.4.1/vd_linux_arm64.tar.gz"
-      sha256 "a240f0e7d5af715363a1bfdb09225d11d2ff908f65bb353196162bb3dd3c1728"
+      url "https://github.com/vanducng/vd-cli/releases/download/v3.5.0/vd_linux_arm64.tar.gz"
+      sha256 "c6df3755c9b61f438362dc650e23c73ce4f9d4caab7046783fcd45474faf720a"
       define_method(:install) do
         bin.install "vd"
       end

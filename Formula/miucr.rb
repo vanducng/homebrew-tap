@@ -5,21 +5,21 @@
 class Miucr < Formula
   desc "Owned AI code-review CLI for humans and agents"
   homepage "https://github.com/vanducng/miu-cr"
-  version "0.89.4"
+  version "0.89.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vanducng/miu-cr/releases/download/v0.89.4/miucr_darwin_x86_64.tar.gz"
-      sha256 "db92e4e0aa378cc8fbbff8880d117f425f042671581728c7e9c31589acf03ca4"
+      url "https://github.com/vanducng/miu-cr/releases/download/v0.89.5/miucr_darwin_x86_64.tar.gz"
+      sha256 "03f16bc5707f357ead39eb3d0f66149d9975cd248c7f541f3da4c3b6413d1ac6"
 
       define_method(:install) do
         bin.install "miucr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vanducng/miu-cr/releases/download/v0.89.4/miucr_darwin_arm64.tar.gz"
-      sha256 "63e767af32da2d7f05b12c5731566a3c2f7dc16308f1705917255b186b8bda7f"
+      url "https://github.com/vanducng/miu-cr/releases/download/v0.89.5/miucr_darwin_arm64.tar.gz"
+      sha256 "4f3dd7c00543fd8d56cbc1e860f03b15a64ddd0b0730f21feb91366914e4e6ab"
 
       define_method(:install) do
         bin.install "miucr"
@@ -29,8 +29,8 @@ class Miucr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vanducng/miu-cr/releases/download/v0.89.4/miucr_linux_x86_64.tar.gz"
-      sha256 "cfac82f457ab63773af0beb4b8d93d3915921f7d18de8d1fe2e62f80ce1c4b77"
+      url "https://github.com/vanducng/miu-cr/releases/download/v0.89.5/miucr_linux_x86_64.tar.gz"
+      sha256 "91ec3f32bf0a364ac09c1ad53f2656053807067db52614e0a110d6364896a397"
       define_method(:install) do
         bin.install "miucr"
       end

@@ -5,15 +5,15 @@ class Rexboard < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/vanducng/rexboard/releases/download/v0.19.0/rexboard-v0.19.0-aarch64-apple-darwin.tar.gz"
-      sha256 "dd4015f5d0e49f3ffd87c9d69daddc6efff81c7317bc270630a64e68af5c5435"
+      url "https://github.com/vanducng/rexboard/releases/download/v0.20.0/rexboard-v0.20.0-aarch64-apple-darwin.tar.gz"
+      sha256 "c6e4812c40dfb0fd63946980ab4b1a2d0e4268add2b7d8c678f0e0958bc75461"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/vanducng/rexboard/releases/download/v0.19.0/rexboard-v0.19.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fdf94fa7d4736632e04fc93b13e4f8f4c6f9283447af90826c75177450a1d6b9"
+      url "https://github.com/vanducng/rexboard/releases/download/v0.20.0/rexboard-v0.20.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3aa3853a867551af6317f312415b63690820ef44c95d9d45975c8cdb3ac4b6aa"
     end
   end
 
